@@ -12,6 +12,11 @@ export default defineNuxtConfig({
     }
   },
   modules: ['@nuxt/ui', '@nuxtjs/plausible'],
+  icon: {
+    clientBundle: {
+      scan: true,
+    },
+  },
   plausible: {
     enabled: !!process.env.PLAUSIBLE_DOMAIN,
     apiHost: process.env.PLAUSIBLE_URL || '',
