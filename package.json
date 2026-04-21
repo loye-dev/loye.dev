@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "docker:build": "export $(cat .env | xargs) && docker build --build-arg PLAUSIBLE_URL --build-arg PLAUSIBLE_DOMAIN -t loye-dev ."
   },
   "dependencies": {
     "@nuxt/ui": "^4.6.1",
