@@ -11,6 +11,12 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['@nuxt/ui'],
+  modules: ['@nuxt/ui', '@nuxtjs/plausible'],
+  plausible: {
+    enabled: !!process.env.PLAUSIBLE_DOMAIN,
+    apiHost: process.env.PLAUSIBLE_URL || '',
+    domain: process.env.PLAUSIBLE_DOMAIN || '',
+    autoOutboundTracking: true,
+  },
   css: ['~/assets/css/main.css']
 })
