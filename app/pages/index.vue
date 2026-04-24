@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-screen items-center justify-center">
+  <div class="flex min-h-screen w-full items-center justify-center overflow-hidden">
     <LogoAnimation />
   </div>
   <UButton

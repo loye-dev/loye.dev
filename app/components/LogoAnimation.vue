@@ -39,7 +39,10 @@ onUnmounted(() => clearTimeout(timer));
 </script>
 
 <template>
-  <div class="text-[0.5rem] sm:text-xs md:text-sm lg:text-base" :style="{ width: preWidth, height: preHeight }">
+  <div
+    class="font-mono text-[0.5rem] sm:text-xs md:text-sm lg:text-base"
+    :style="{ width: preWidth, height: preHeight }"
+  >
     <pre class="logo">{{ frames[currentFrame] }}</pre>
   </div>
 </template>
