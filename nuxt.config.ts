@@ -5,11 +5,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   vite: {
     optimizeDeps: {
-      include: [
-        '@vue/devtools-core',
-        '@vue/devtools-kit',
-      ]
-    }
+      include: ['@vue/devtools-core', '@vue/devtools-kit'],
+    },
   },
   modules: ['@nuxt/ui', '@nuxtjs/plausible', '@nuxt/eslint'],
   icon: {
@@ -23,5 +20,5 @@ export default defineNuxtConfig({
     domain: process.env.PLAUSIBLE_DOMAIN || '',
     autoOutboundTracking: true,
   },
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
 })

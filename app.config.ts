@@ -1,7 +1,7 @@
 export default defineAppConfig({
   ui: {
     colors: {
-      neutral: 'neutral'
+      neutral: 'neutral',
     },
     icons: {
       arrowDown: 'i-tabler-arrow-down',
@@ -45,7 +45,7 @@ export default defineAppConfig({
       system: 'i-tabler-device-desktop',
       tip: 'i-tabler-bulb',
       upload: 'i-tabler-upload',
-      warning: 'i-tabler-alert-triangle'
-    }
-  }
+      warning: 'i-tabler-alert-triangle',
+    },
+  },
 })
