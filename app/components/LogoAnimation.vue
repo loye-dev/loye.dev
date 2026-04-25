@@ -37,7 +37,7 @@ onUnmounted(() => clearTimeout(timer))
 
 <template>
   <div
-    class="font-mono text-[0.5rem] sm:text-xs md:text-sm lg:text-base"
+    class="text-[0.5rem] sm:text-xs md:text-sm lg:text-base"
     :style="{ width: preWidth, height: preHeight }"
   >
     <pre class="logo">{{ frames[currentFrame] }}</pre>
@@ -46,8 +46,9 @@ onUnmounted(() => clearTimeout(timer))
 
 <style scoped>
 .logo {
-  font-family: monospace;
+  font-family: 'Courier New', Courier, monospace;
   line-height: 1;
+  letter-spacing: -0.5px;
   white-space: pre;
   user-select: none;
 }
