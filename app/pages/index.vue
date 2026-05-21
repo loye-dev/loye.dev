@@ -9,7 +9,7 @@
       icon="simple-icons:github"
       variant="ghost"
       color="neutral"
-      class="fixed bottom-4 right-4 opacity-30 hover:opacity-70"
+      class="fixed right-4 bottom-4 opacity-30 hover:opacity-70"
     />
   </div>
 </template>
